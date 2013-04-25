@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+  <web desc="youku" url="www.youku.com">
+       <crawl type="videoinfo" urlpattern="http://www.youku.com/show_page/id_\w*.html" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="vid" xpath=""/>
+	 <field name="name" xpath=""/>
+	 <field name="year" xpath=""/>
+	 <field name="scole" xpath=""/>
+	 <field name="douban_scole" xpath=""/>
+	 <field name="fl_type" xpath=""/>
+	 <field name="sl_type" xpath=""/>
+	 <field name="actor" xpath=""/>
+         <field name="director" xpath=""/>  
+         <field name="totalvod" xpath=""/>
+	 <field name="duration" xpath=""/>
+       </crawl>  
+       <crawl type="videoplay" urlpattern="ddddd" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="vid" xpath=""/>
+	 <field name="name" xpath=""/>
+	 <field name="year" xpath=""/>
+	 <field name="scole" xpath=""/>
+       </crawl>  
+  </web>
+  <web desc="qq" url="v.qq.com">
+       <crawl type="videoinfo" urlpattern="xxxxxxxxxxx" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="vid" xpath=""/>
+	 <field name="name" xpath=""/>
+	 <field name="year" xpath=""/>
+	 <field name="scole" xpath=""/>
+	 <field name="fl_type" xpath=""/>
+	 <field name="sl_type" xpath=""/>
+	 <field name="actor" xpath=""/>
+         <field name="director" xpath=""/>  
+         <field name="totalvod" xpath=""/>
+	 <field name="duration" xpath=""/>
+       </crawl>  
+       <crawl type="videoplay" urlpattern="ddddd" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="vid" xpath=""/>
+	 <field name="name" xpath=""/>
+	 <field name="year" xpath=""/>
+	 <field name="scole" xpath=""/>
+       </crawl>  
+  </web>
+</conf>

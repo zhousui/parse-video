@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+  <web desc="youku" url="www.youku.com">
+       <crawl type="videoinfo" urlpattern="http://www.youku.com/show_page/id_\w*.html" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="title" xpath="//H1[@class=&quot;title&quot;]/SPAN[2]/text()" />
+	 <field name="link" xpath="//UL[@class='baseinfo']/LI[@class='link']/A/@href" />
+	 <field name="alias" xpath="//LI[@class='row1 alias']" option="walk"/>
+	 <field name="type" xpath="//*[@class=&quot;title&quot;]/SPAN/A/text()" />
+	 <field name="pub" xpath="//*[@class=&quot;title&quot;]/SPAN[@class='pub']/text()" />
+	 <field name="score" xpath="//*[@class=&quot;ratingstar&quot;]/SPAN/EM[6]/text()"/>
+	 <field name="favor" xpath="//*[@class=&quot;ratingstar&quot;]/SPAN/@title"/>
+	 <field name="douban_score" xpath="//*[@class=&quot;rating_dp&quot;]/EM[@class='num']/text()"/>
+	 <field name="area" xpath="//SPAN[@class='area']" option="walk"/>
+	 <field name="sl_type" xpath="//*[@class=&quot;baseinfo&quot;]//SPAN[@class='type']" option="walk"/>
+	 <field name="actor" xpath="//*[@class=&quot;actor&quot;]" option="walk"/>
+	 <field name="director" xpath="//SPAN[@class='director']/A/text()"/>  
+	 <field name="totalvod" xpath="//*[@class=&quot;basedata&quot;]/LI/SPAN" option="walk"/>
+	 <field name="settotal" xpath="//*[@class=&quot;basenotice&quot;]/text()"/>
+	 <field name="duration" xpath="//SPAN[@class='duration']" option="walk"/>
+	 <field name="host" xpath="//*[@class=&quot;baseinfo&quot;]//SPAN[@class='host']" option="walk"/>
+	 <!--field name="guest" xpath="//DIV[@id='episode']//LI[@class='iguests']" option="walk"/>
+	 <field name="ititle" xpath="//DIV[@id='episode']//LI[@class='ititle']/A/text()"/-->
+	 <field name="img" xpath="//UL[@class='baseinfo']//LI[@class='thumb']/IMG//@src" />
+	 <field name="simpledesc" xpath="//SPAN[@class='short']/SPAN/text()" xpath1="//SPAN[@class='short']/text()" />
+	 <field name="detaildesc" xpath="//SPAN[@class='short']/SPAN[2]/text()" xpath1="//SPAN[@class='long']/text()" />
+	 <!--field name="episode" xpath="//DIV[@id='episode']//A/@href" option="set" /-->
+	 <field name="episode" xpath="//DIV[@id='episode_wrap']/DIV[@id='episode']/DIV" option="node"/>
+	 <field name="zySeriesTab" xpath="//UL[@id='zySeriesTab']//LI/@data" option="set" />
+	 <field name="head-script" xpath="//HEAD/SCRIPT/text()" />
+       </crawl>  
+       <!--crawl type="videoplay" urlpattern="http://v.youku.com/v_show/id_\w*.html" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="title" xpath="//META[@name='title']/@content"/>
+	 <field name="type" xpath="//DIV[@class='show_intro']//SPAN[@id='cateInfo']/A/text()"/>
+	 <field name="area" xpath="//DIV[@class='showInfo_base']//LI[@class='show_area']" option="walk"/>
+	 <field name="pub" xpath="//DIV[@class='showInfo_base']//SPAN[@class='pub']/text()"/>
+	 <field name="score" xpath="//DIV[@class='showInfo_base']//EM[@class='num']/text()"/>
+	 <field name="favor" xpath="//DIV[@class='showInfo_base']//SPAN[@class='rating']/SPAN/@title" />
+	 <field name="sl_type" xpath="//DIV[@class='showInfo_base']//LI[@class='show_type']"  option="walk"/>
+	 <field name="totalvod" xpath="//DIV[@class='stat']/SPAN[@class='num'][1]/text()" />
+	 <field name="actor" xpath="//LI[@class='act-name']/A/text()" option="set" />
+       </crawl-->  
+  </web>
+  <web desc="qq" url="v.qq.com">
+       <crawl type="videoinfo" urlpattern="xxxxxxxxxxx" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="vid" xpath=""/>
+	 <field name="name" xpath=""/>
+	 <field name="year" xpath=""/>
+	 <field name="scole" xpath=""/>
+	 <field name="fl_type" xpath=""/>
+	 <field name="sl_type" xpath=""/>
+	 <field name="actor" xpath=""/>
+         <field name="director" xpath=""/>  
+         <field name="totalvod" xpath=""/>
+	 <field name="duration" xpath=""/>
+       </crawl>  
+       <crawl type="videoplay" urlpattern="ddddd" extendclass="org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter">
+	 <field name="vid" xpath=""/>
+	 <field name="name" xpath=""/>
+	 <field name="year" xpath=""/>
+	 <field name="scole" xpath=""/>
+       </crawl>  
+  </web>
+</conf>

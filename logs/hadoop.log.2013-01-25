@@ -1,0 +1,934 @@
+2013-01-25 10:10:00,889 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 10:10:01,269 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 10:10:01,270 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 10:10:02,505 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8de462: startup date [Fri Jan 25 10:10:02 CST 2013]; root of context hierarchy
+2013-01-25 10:10:02,608 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 10:10:03,294 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29ac: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 10:10:03,340 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 10:10:03,638 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 10:10:04,147 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 10:10:05,223 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8suxfjotyiw3qp|bc5596, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8suxfjotyiw3qp|bc5596, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 10:37:35,321 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 10:37:35,513 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 10:37:35,514 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 10:37:36,342 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14d1d41: startup date [Fri Jan 25 10:37:36 CST 2013]; root of context hierarchy
+2013-01-25 10:37:36,417 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 10:37:36,767 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29ac: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 10:37:36,784 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 10:37:36,924 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 10:37:37,232 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 10:37:37,582 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8suyezfn1uiel1g|970c0e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8suyezfn1uiel1g|970c0e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 10:38:49,016 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 10:38:49,180 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 10:38:49,780 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16dfa45: startup date [Fri Jan 25 10:38:49 CST 2013]; root of context hierarchy
+2013-01-25 10:38:49,854 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 10:38:50,250 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@149a794: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 10:38:50,272 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 10:38:50,369 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 10:38:50,617 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 10:38:50,880 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8suygk3x125ugxc|1bf7b23, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8suygk3x125ugxc|1bf7b23, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 10:50:08,513 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 10:50:08,703 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 10:50:08,704 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 10:50:08,704 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 10:50:08,704 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 10:50:08,704 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 10:50:08,704 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 10:50:08,704 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 10:50:09,475 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ba4211: startup date [Fri Jan 25 10:50:09 CST 2013]; root of context hierarchy
+2013-01-25 10:50:09,541 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 10:50:09,915 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1827d1: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 10:50:09,935 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 10:50:10,042 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 10:50:10,326 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 10:50:10,550 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8suyv4jg1mf6lkt|497904, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8suyv4jg1mf6lkt|497904, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 12:18:15,631 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 12:18:16,061 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 12:18:16,062 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 12:18:16,974 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8de462: startup date [Fri Jan 25 12:18:16 CST 2013]; root of context hierarchy
+2013-01-25 12:18:17,095 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 12:18:17,552 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b0095d: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 12:18:17,587 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 12:18:17,822 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 12:18:18,173 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 12:18:18,635 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv20gk81dtfs32|104e28b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv20gk81dtfs32|104e28b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 13:29:55,699 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 13:29:56,077 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 13:29:57,081 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ba4211: startup date [Fri Jan 25 13:29:57 CST 2013]; root of context hierarchy
+2013-01-25 13:29:57,177 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 13:29:57,590 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@159e154: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 13:29:57,642 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 13:29:57,922 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 13:29:58,372 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 13:29:59,356 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv4kmk02wv6zy|5b675e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv4kmk02wv6zy|5b675e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 13:45:43,853 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 13:45:44,256 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 13:45:44,256 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 13:45:44,256 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 13:45:44,256 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 13:45:44,256 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 13:45:44,256 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 13:45:44,256 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 13:45:44,257 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 13:45:45,255 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ba4211: startup date [Fri Jan 25 13:45:45 CST 2013]; root of context hierarchy
+2013-01-25 13:45:45,382 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 13:45:45,852 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@159e154: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 13:45:45,879 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 13:45:46,217 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 13:45:46,776 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 13:45:48,273 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv54y9c1b3lvl5|5c7734, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv54y9c1b3lvl5|5c7734, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 13:57:40,821 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 13:57:40,980 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 13:57:41,667 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14d1d41: startup date [Fri Jan 25 13:57:41 CST 2013]; root of context hierarchy
+2013-01-25 13:57:41,732 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 13:57:42,092 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cd280b: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 13:57:42,110 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 13:57:42,211 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 13:57:42,456 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 13:57:42,745 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv5karx1ykxmlk|bc5596, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv5karx1ykxmlk|bc5596, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 14:08:13,659 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 14:08:13,826 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 14:08:13,827 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 14:08:13,827 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 14:08:14,521 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1acfa31: startup date [Fri Jan 25 14:08:14 CST 2013]; root of context hierarchy
+2013-01-25 14:08:14,582 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 14:08:14,911 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cd280b: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 14:08:14,929 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 14:08:15,021 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 14:08:15,278 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 14:08:15,534 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv5xv1zqozurb|bc5596, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv5xv1zqozurb|bc5596, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 14:10:38,454 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 14:10:38,615 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 14:10:38,615 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 14:10:38,615 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 14:10:38,615 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 14:10:38,615 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 14:10:38,615 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 14:10:38,615 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 14:10:38,616 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 14:10:39,291 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ba4211: startup date [Fri Jan 25 14:10:39 CST 2013]; root of context hierarchy
+2013-01-25 14:10:39,352 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 14:10:39,682 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1de45e2: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 14:10:39,699 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 14:10:39,788 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 14:10:40,013 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 14:10:40,241 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv60yrf1ugiaf9|104e28b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv60yrf1ugiaf9|104e28b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 14:27:39,107 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 14:27:39,297 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 14:27:39,298 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 14:27:40,048 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14d1d41: startup date [Fri Jan 25 14:27:40 CST 2013]; root of context hierarchy
+2013-01-25 14:27:40,111 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 14:27:40,487 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29ac: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 14:27:40,507 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 14:27:40,627 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 14:27:42,160 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 14:27:42,785 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv6mufl6iic0k|bc5596, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv6mufl6iic0k|bc5596, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 14:33:39,853 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 14:33:40,035 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 14:33:40,036 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 14:33:40,036 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 14:33:40,036 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 14:33:40,036 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 14:33:40,818 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1114460: startup date [Fri Jan 25 14:33:40 CST 2013]; root of context hierarchy
+2013-01-25 14:33:40,901 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 14:33:41,218 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@118958e: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 14:33:41,238 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 14:33:41,355 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 14:33:41,643 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 14:33:41,846 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv6ukrz12gp4j5|96212a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv6ukrz12gp4j5|96212a, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 14:34:00,772 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 14:34:00,942 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 14:34:00,943 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 14:34:00,943 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 14:34:01,784 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@47a0d4: startup date [Fri Jan 25 14:34:01 CST 2013]; root of context hierarchy
+2013-01-25 14:34:01,858 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 14:34:02,190 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1be2893: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 14:34:02,208 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 14:34:02,300 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 14:34:02,550 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 14:34:02,767 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv6v0xx1dh2kcg|104e28b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv6v0xx1dh2kcg|104e28b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 14:34:28,143 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 14:34:28,330 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 14:34:28,331 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 14:34:28,331 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 14:34:28,331 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 14:34:28,331 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 14:34:28,331 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 14:34:28,331 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 14:34:28,331 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 14:34:29,034 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@163f7a1: startup date [Fri Jan 25 14:34:29 CST 2013]; root of context hierarchy
+2013-01-25 14:34:29,114 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 14:34:29,499 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c783c5: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 14:34:29,519 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 14:34:29,625 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 14:34:29,911 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 14:34:30,154 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv6vm0ryiri7w|ea5461, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv6vm0ryiri7w|ea5461, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 14:35:02,685 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 14:35:02,847 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 14:35:02,848 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 14:35:02,848 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 14:35:02,848 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 14:35:03,496 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a9bba: startup date [Fri Jan 25 14:35:03 CST 2013]; root of context hierarchy
+2013-01-25 14:35:03,567 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 14:35:03,913 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19c0bd6: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 14:35:03,930 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 14:35:04,020 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 14:35:04,280 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 14:35:04,484 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv6wckcn6aoko|49cf9f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv6wckcn6aoko|49cf9f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 15:06:56,983 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 15:06:57,200 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 15:06:57,201 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 15:06:57,813 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@149eb9f: startup date [Fri Jan 25 15:06:57 CST 2013]; root of context hierarchy
+2013-01-25 15:06:57,881 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 15:06:58,226 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c783c5: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 15:06:58,244 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 15:06:58,378 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 15:06:59,022 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 15:06:59,809 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv81dnu7fmb2b|49cf9f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv81dnu7fmb2b|49cf9f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 15:10:07,182 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 15:10:07,363 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 15:10:07,364 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 15:10:08,115 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14d1d41: startup date [Fri Jan 25 15:10:08 CST 2013]; root of context hierarchy
+2013-01-25 15:10:08,185 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 15:10:08,552 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b0095d: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 15:10:08,570 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 15:10:08,686 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 15:10:08,985 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 15:10:09,183 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv85gj2775sfl|970c0e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv85gj2775sfl|970c0e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 15:25:12,130 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 15:25:12,582 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 15:25:12,583 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 15:25:12,583 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 15:25:12,583 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 15:25:12,583 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 15:25:12,583 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 15:25:12,583 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 15:25:12,583 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 15:25:13,740 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a85d38: startup date [Fri Jan 25 15:25:13 CST 2013]; root of context hierarchy
+2013-01-25 15:25:13,866 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 15:25:14,381 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d2b9b7: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 15:25:14,423 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 15:25:14,881 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 15:25:15,198 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 15:25:15,537 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv8ovm7y8573b|1c1c92b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv8ovm7y8573b|1c1c92b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 15:26:14,513 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2013-01-25 15:26:14,571 INFO  support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2013-01-25 15:39:37,978 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 15:39:38,376 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 15:39:38,377 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 15:39:38,377 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 15:39:38,377 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 15:39:38,377 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 15:39:38,377 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 15:39:38,377 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 15:39:39,192 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a85d38: startup date [Fri Jan 25 15:39:39 CST 2013]; root of context hierarchy
+2013-01-25 15:39:39,260 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 15:39:39,658 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c5aa00: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 15:39:39,708 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 15:39:39,856 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 15:39:40,587 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 15:39:41,808 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv97f629kfw0l|17e4dee, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv97f629kfw0l|17e4dee, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 15:59:30,211 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 15:59:30,602 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 15:59:30,602 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 15:59:30,603 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 15:59:30,603 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 15:59:30,603 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 15:59:30,603 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 15:59:30,603 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 15:59:30,620 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 15:59:31,441 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@173ec72: startup date [Fri Jan 25 15:59:31 CST 2013]; root of context hierarchy
+2013-01-25 15:59:31,533 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 15:59:31,952 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29ac: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 15:59:32,001 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 15:59:32,290 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 15:59:32,763 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 15:59:34,030 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sv9wz78xbjjit|bc5596, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sv9wz78xbjjit|bc5596, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 16:08:31,238 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 16:08:31,428 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 16:08:32,060 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6754d6: startup date [Fri Jan 25 16:08:32 CST 2013]; root of context hierarchy
+2013-01-25 16:08:32,138 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 16:08:32,514 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19ecd80: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 16:08:32,536 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 16:08:32,633 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 16:08:32,963 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 16:08:33,229 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sva8k74bsbyap|1dafbaf, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sva8k74bsbyap|1dafbaf, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 16:11:26,516 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 16:11:26,674 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 16:11:26,674 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 16:11:26,675 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 16:11:27,389 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8ff4cf: startup date [Fri Jan 25 16:11:27 CST 2013]; root of context hierarchy
+2013-01-25 16:11:27,463 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 16:11:27,778 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@118958e: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 16:11:27,796 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 16:11:27,899 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 16:11:28,169 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 16:11:28,386 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svacbfrvyjisn|5c7734, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svacbfrvyjisn|5c7734, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:03:33,110 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:03:33,278 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:03:34,009 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ba4211: startup date [Fri Jan 25 17:03:34 CST 2013]; root of context hierarchy
+2013-01-25 17:03:34,081 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:03:34,393 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d87b85: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:03:34,410 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:03:34,502 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:03:35,157 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:03:35,846 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svc7bxr1xlp9ku|ff9053, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svc7bxr1xlp9ku|ff9053, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:04:09,506 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:04:09,706 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:04:09,707 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:04:10,435 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@163f7a1: startup date [Fri Jan 25 17:04:10 CST 2013]; root of context hierarchy
+2013-01-25 17:04:10,534 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:04:10,998 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c5aa00: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:04:11,041 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:04:11,163 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:04:11,429 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:04:11,719 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svc8485tnbxi3|1c1c92b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svc8485tnbxi3|1c1c92b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:08:46,974 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:08:47,143 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:08:47,144 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:08:47,144 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:08:47,144 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:08:47,144 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:08:47,144 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:08:47,144 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:08:47,782 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1dc0e7a: startup date [Fri Jan 25 17:08:47 CST 2013]; root of context hierarchy
+2013-01-25 17:08:47,860 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:08:48,214 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11c0d60: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:08:48,234 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:08:48,340 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:08:48,637 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:08:48,853 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svce23f90zmf1|17e4dee, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svce23f90zmf1|17e4dee, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:17:14,261 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:17:14,458 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:17:14,458 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:17:14,459 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:17:15,165 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@d05c13: startup date [Fri Jan 25 17:17:15 CST 2013]; root of context hierarchy
+2013-01-25 17:17:15,229 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:17:15,561 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19c0bd6: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:17:15,580 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:17:15,681 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:17:15,910 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:17:16,120 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svcoxke1nq68ri|49cf9f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svcoxke1nq68ri|49cf9f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:19:07,519 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2013-01-25 17:19:07,599 INFO  support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2013-01-25 17:26:14,592 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:26:14,899 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:26:14,900 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:26:15,898 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14d1d41: startup date [Fri Jan 25 17:26:15 CST 2013]; root of context hierarchy
+2013-01-25 17:26:15,981 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:26:16,355 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c783c5: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:26:16,378 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:26:16,469 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:26:16,710 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:26:16,926 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svd0iu831tszc|ea5461, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svd0iu831tszc|ea5461, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:47:02,431 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:47:02,839 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:47:02,839 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:47:02,839 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:47:02,839 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:47:02,839 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:47:02,839 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:47:02,840 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:47:03,871 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1ae90c: startup date [Fri Jan 25 17:47:03 CST 2013]; root of context hierarchy
+2013-01-25 17:47:04,012 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:47:04,639 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1be2893: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:47:04,916 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:47:05,440 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:47:06,843 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:47:08,482 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svdrag110pfdlo|1b54362, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svdrag110pfdlo|1b54362, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:52:30,582 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:52:31,051 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:52:31,052 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:52:31,052 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:52:31,052 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:52:31,052 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:52:31,052 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:52:31,052 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:52:31,052 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:52:32,285 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1acfa31: startup date [Fri Jan 25 17:52:32 CST 2013]; root of context hierarchy
+2013-01-25 17:52:32,393 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:52:32,888 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29ac: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:52:32,946 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:52:33,297 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:52:33,651 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:52:34,002 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8svdybg21j5ufvm|987197, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8svdybg21j5ufvm|987197, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 17:54:52,944 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 17:54:53,183 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 17:54:53,184 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 17:54:53,184 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 17:54:53,184 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 17:54:53,184 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 17:54:53,184 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 17:54:54,144 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@18ce14a: startup date [Fri Jan 25 17:54:54 CST 2013]; root of context hierarchy
+2013-01-25 17:54:54,268 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 17:54:54,800 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d87b85: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 17:54:54,847 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 17:54:55,300 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 17:54:56,009 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 17:54:56,971 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sve1cy2shz9vd|ff9053, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sve1cy2shz9vd|ff9053, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-01-25 18:01:10,624 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - Registered Plugins:
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2013-01-25 18:01:11,003 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-01-25 18:01:11,004 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2013-01-25 18:01:12,061 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1ae90c: startup date [Fri Jan 25 18:01:12 CST 2013]; root of context hierarchy
+2013-01-25 18:01:12,147 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/applicationContext.xml]
+2013-01-25 18:01:12,568 INFO  support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@159e154: defining beans [c3p0DataSource,dataSource,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,sqlSessionFactory,transactionManager,VideoCrawlinfoTblMapper,AreaCategoryTblMapper,ContentSupplierTblMapper,FirstlevelCategoryTblMapper,SecondlevelCategoryTblMapper,VideoBaseinfoTblMapper,VideoScRefTblMapper,VideoSourceinfoTblMapper,VideoPlayinfoTblMapper,OptTblMapper,YoukuVideoInfoBusiness]; root of factory hierarchy
+2013-01-25 18:01:12,635 INFO  log.MLog - MLog clients using log4j logging.
+2013-01-25 18:01:12,858 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2013-01-25 18:01:13,197 INFO  datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2013-01-25 18:01:13,524 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 10, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx8sve9gd31trwf61|1b54362, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx8sve9gd31trwf61|1b54362, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf-8&autoReconnect=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]

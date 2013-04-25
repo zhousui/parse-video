@@ -1,0 +1,1394 @@
+2012-12-20 15:33:31,536 INFO  crawl.Crawl - crawl started in: crawl-20121220153331
+2012-12-20 15:33:31,561 INFO  crawl.Crawl - rootUrlDir = urls
+2012-12-20 15:33:31,561 INFO  crawl.Crawl - threads = 5
+2012-12-20 15:33:31,561 INFO  crawl.Crawl - depth = 3
+2012-12-20 15:33:31,561 INFO  crawl.Crawl - indexer=lucene
+2012-12-20 15:33:31,561 INFO  crawl.Crawl - topN = 50
+2012-12-20 15:33:31,630 INFO  crawl.Injector - Injector: starting at 2012-12-20 15:33:31
+2012-12-20 15:33:31,630 INFO  crawl.Injector - Injector: crawlDb: crawl-20121220153331/crawldb
+2012-12-20 15:33:31,630 INFO  crawl.Injector - Injector: urlDir: urls
+2012-12-20 15:33:31,706 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2012-12-20 15:33:31,869 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:33:35,324 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:33:37,021 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:33:37,022 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:33:37,024 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:33:37,024 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:33:37,038 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:33:37,038 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:33:37,038 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:33:37,038 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:33:37,038 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:33:37,038 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:33:37,038 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:33:37,285 WARN  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2012-12-20 15:33:43,115 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:33:43,259 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:33:43,260 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:33:43,299 WARN  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2012-12-20 15:33:44,111 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2012-12-20 15:33:44,140 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:33:49,050 INFO  crawl.Injector - Injector: finished at 2012-12-20 15:33:49, elapsed: 00:00:17
+2012-12-20 15:33:49,117 INFO  crawl.Generator - Generator: starting at 2012-12-20 15:33:49
+2012-12-20 15:33:49,119 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2012-12-20 15:33:49,119 INFO  crawl.Generator - Generator: filtering: true
+2012-12-20 15:33:49,119 INFO  crawl.Generator - Generator: normalizing: true
+2012-12-20 15:33:49,119 INFO  crawl.Generator - Generator: topN: 50
+2012-12-20 15:33:49,119 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2012-12-20 15:33:49,355 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:33:58,697 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:33:59,439 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:33:59,696 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:33:59,697 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:33:59,773 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2012-12-20 15:33:59,773 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2012-12-20 15:33:59,774 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2012-12-20 15:33:59,863 WARN  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2012-12-20 15:33:59,891 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:34:00,622 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:34:00,623 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:34:00,800 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2012-12-20 15:34:00,800 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2012-12-20 15:34:00,800 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2012-12-20 15:34:00,860 WARN  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2012-12-20 15:34:01,380 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2012-12-20 15:34:02,380 INFO  crawl.Generator - Generator: segment: crawl-20121220153331/segments/20121220153402
+2012-12-20 15:34:02,383 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:34:15,856 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:34:31,218 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:34:31,231 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:34:31,231 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:34:31,231 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:34:31,231 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:34:31,231 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:34:31,232 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:34:31,232 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:34:31,257 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:34:31,257 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:34:31,257 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:34:31,257 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:34:31,257 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:34:31,258 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:34:31,366 WARN  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2012-12-20 15:34:33,368 INFO  crawl.Generator - Generator: finished at 2012-12-20 15:34:33, elapsed: 00:00:44
+2012-12-20 15:34:33,368 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2012-12-20 15:34:33,369 INFO  fetcher.Fetcher - Fetcher: starting at 2012-12-20 15:34:33
+2012-12-20 15:34:33,369 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20121220153331/segments/20121220153402
+2012-12-20 15:34:33,477 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:34:36,053 INFO  fetcher.Fetcher - Fetcher: threads: 5
+2012-12-20 15:34:36,057 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:34:36,121 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:34:36,347 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:34:36,348 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:34:36,460 INFO  fetcher.Fetcher - fetching http://www.youku.com/show_page/id_z76730dd2cb1e11e1b16f.html
+2012-12-20 15:34:36,460 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2012-12-20 15:34:36,460 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2012-12-20 15:34:36,463 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2012-12-20 15:34:36,463 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2012-12-20 15:34:36,490 INFO  http.Http - http.proxy.host = null
+2012-12-20 15:34:36,490 INFO  http.Http - http.proxy.port = 8080
+2012-12-20 15:34:36,490 INFO  http.Http - http.timeout = 10000
+2012-12-20 15:34:36,490 INFO  http.Http - http.content.limit = 65536
+2012-12-20 15:34:36,490 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.2
+2012-12-20 15:34:36,490 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2012-12-20 15:34:36,490 INFO  http.Http - protocol.plugin.check.blocking = false
+2012-12-20 15:34:36,490 INFO  http.Http - protocol.plugin.check.robots = false
+2012-12-20 15:34:37,460 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:34:38,460 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:34:38,741 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 15:34:38,860 WARN  parse.ParseUtil - Unable to successfully parse content http://www.youku.com/show_page/id_z76730dd2cb1e11e1b16f.html of type text/html
+2012-12-20 15:34:38,862 WARN  fetcher.Fetcher - Error parsing: http://www.youku.com/show_page/id_z76730dd2cb1e11e1b16f.html: failed(2,200): org.apache.nutch.parse.ParseException: Unable to successfully parse content
+2012-12-20 15:34:38,864 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2012-12-20 15:34:38,916 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2012-12-20 15:34:39,461 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:34:39,461 INFO  fetcher.Fetcher - -activeThreads=0
+2012-12-20 15:34:39,703 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:34:39,820 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:34:39,821 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:34:40,901 INFO  fetcher.Fetcher - Fetcher: finished at 2012-12-20 15:34:40, elapsed: 00:00:07
+2012-12-20 15:34:40,906 INFO  crawl.CrawlDb - CrawlDb update: starting at 2012-12-20 15:34:40
+2012-12-20 15:34:40,906 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20121220153331/crawldb
+2012-12-20 15:34:40,906 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20121220153331/segments/20121220153402]
+2012-12-20 15:34:40,906 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2012-12-20 15:34:40,906 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2012-12-20 15:34:40,906 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2012-12-20 15:34:40,908 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2012-12-20 15:34:40,909 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:34:46,703 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:34:48,118 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:34:48,119 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:34:48,132 WARN  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2012-12-20 15:34:54,478 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:34:54,928 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:38:39,797 INFO  crawl.Crawl - crawl started in: crawl-20121220153839
+2012-12-20 15:38:39,797 INFO  crawl.Crawl - rootUrlDir = urls
+2012-12-20 15:38:39,797 INFO  crawl.Crawl - threads = 5
+2012-12-20 15:38:39,797 INFO  crawl.Crawl - depth = 3
+2012-12-20 15:38:39,797 INFO  crawl.Crawl - indexer=lucene
+2012-12-20 15:38:39,797 INFO  crawl.Crawl - topN = 50
+2012-12-20 15:38:39,848 INFO  crawl.Injector - Injector: starting at 2012-12-20 15:38:39
+2012-12-20 15:38:39,848 INFO  crawl.Injector - Injector: crawlDb: crawl-20121220153839/crawldb
+2012-12-20 15:38:39,849 INFO  crawl.Injector - Injector: urlDir: urls
+2012-12-20 15:38:39,935 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2012-12-20 15:38:40,102 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:38:41,522 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:38:41,723 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:38:41,724 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:38:41,725 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:38:41,725 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:38:41,725 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:38:41,725 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:38:41,823 WARN  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2012-12-20 15:38:43,290 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:38:43,487 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:38:43,488 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:38:43,489 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:38:43,489 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:38:43,489 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:38:43,489 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:38:43,489 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:38:43,489 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:38:43,533 WARN  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2012-12-20 15:38:44,319 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2012-12-20 15:38:44,324 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:38:46,139 INFO  crawl.Injector - Injector: finished at 2012-12-20 15:38:46, elapsed: 00:00:06
+2012-12-20 15:38:46,154 INFO  crawl.Generator - Generator: starting at 2012-12-20 15:38:46
+2012-12-20 15:38:46,154 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2012-12-20 15:38:46,155 INFO  crawl.Generator - Generator: filtering: true
+2012-12-20 15:38:46,155 INFO  crawl.Generator - Generator: normalizing: true
+2012-12-20 15:38:46,155 INFO  crawl.Generator - Generator: topN: 50
+2012-12-20 15:38:46,155 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2012-12-20 15:38:46,161 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:38:51,859 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:38:52,351 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:38:52,653 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:38:52,653 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:38:52,653 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:38:52,653 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:38:52,653 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:38:52,653 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:38:52,654 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:38:52,673 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2012-12-20 15:38:52,674 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2012-12-20 15:38:52,674 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2012-12-20 15:38:52,749 WARN  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2012-12-20 15:38:52,767 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:38:52,869 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:38:53,225 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:38:53,226 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:38:53,242 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2012-12-20 15:38:53,242 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2012-12-20 15:38:53,242 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2012-12-20 15:38:53,260 WARN  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2012-12-20 15:38:54,313 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2012-12-20 15:38:55,313 INFO  crawl.Generator - Generator: segment: crawl-20121220153839/segments/20121220153855
+2012-12-20 15:38:55,316 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:39:04,373 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:39:05,680 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:39:05,787 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:39:05,787 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:39:05,787 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:39:05,787 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:39:05,787 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:39:05,787 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:39:05,787 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:39:05,788 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:39:05,810 WARN  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2012-12-20 15:39:06,953 INFO  crawl.Generator - Generator: finished at 2012-12-20 15:39:06, elapsed: 00:00:20
+2012-12-20 15:39:06,953 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2012-12-20 15:39:06,954 INFO  fetcher.Fetcher - Fetcher: starting at 2012-12-20 15:39:06
+2012-12-20 15:39:06,954 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20121220153839/segments/20121220153855
+2012-12-20 15:39:07,066 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:39:15,363 INFO  fetcher.Fetcher - Fetcher: threads: 5
+2012-12-20 15:39:15,389 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:39:16,084 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2012-12-20 15:39:17,318 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:39:17,746 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:39:17,747 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:39:18,514 INFO  fetcher.Fetcher - fetching http://www.youku.com/show_page/id_z76730dd2cb1e11e1b16f.html
+2012-12-20 15:39:19,514 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:39:18,514 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2012-12-20 15:39:18,514 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2012-12-20 15:39:18,514 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2012-12-20 15:39:18,514 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2012-12-20 15:39:20,363 INFO  http.Http - http.proxy.host = null
+2012-12-20 15:39:20,364 INFO  http.Http - http.proxy.port = 8080
+2012-12-20 15:39:20,364 INFO  http.Http - http.timeout = 10000
+2012-12-20 15:39:20,364 INFO  http.Http - http.content.limit = 65536
+2012-12-20 15:39:20,364 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.2
+2012-12-20 15:39:20,364 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2012-12-20 15:39:20,364 INFO  http.Http - protocol.plugin.check.blocking = false
+2012-12-20 15:39:20,364 INFO  http.Http - protocol.plugin.check.robots = false
+2012-12-20 15:39:21,294 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:39:22,294 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:39:22,958 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 15:39:23,177 WARN  parse.ParseUtil - Unable to successfully parse content http://www.youku.com/show_page/id_z76730dd2cb1e11e1b16f.html of type text/html
+2012-12-20 15:39:23,192 WARN  fetcher.Fetcher - Error parsing: http://www.youku.com/show_page/id_z76730dd2cb1e11e1b16f.html: failed(2,200): org.apache.nutch.parse.ParseException: Unable to successfully parse content
+2012-12-20 15:39:23,280 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2012-12-20 15:39:23,295 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:39:23,359 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2012-12-20 15:39:24,295 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2012-12-20 15:39:24,295 INFO  fetcher.Fetcher - -activeThreads=0
+2012-12-20 15:39:25,127 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:39:25,757 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:39:25,758 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:39:25,772 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:39:26,337 INFO  fetcher.Fetcher - Fetcher: finished at 2012-12-20 15:39:26, elapsed: 00:00:19
+2012-12-20 15:39:26,353 INFO  crawl.CrawlDb - CrawlDb update: starting at 2012-12-20 15:39:26
+2012-12-20 15:39:26,353 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20121220153839/crawldb
+2012-12-20 15:39:26,353 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20121220153839/segments/20121220153855]
+2012-12-20 15:39:26,353 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2012-12-20 15:39:26,353 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2012-12-20 15:39:26,353 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2012-12-20 15:39:26,354 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2012-12-20 15:39:26,363 WARN  mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2012-12-20 15:58:24,604 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Basic Query Filter (query-basic)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Site Query Filter (query-site)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Basic Summarizer Plug-in (summary-basic)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Text Parse Plug-in (parse-text)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	JavaScript Parser (parse-js)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	URL Query Filter (query-url)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 15:58:25,003 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 15:58:25,004 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 15:58:26,813 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 16:07:50,158 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 16:07:50,336 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 16:07:50,336 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 16:07:50,336 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 16:07:50,337 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 16:07:51,446 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 16:09:07,367 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 16:09:07,535 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 16:09:07,536 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 16:09:08,383 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 16:26:27,433 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 16:26:27,656 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 16:26:27,656 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 16:26:27,656 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 16:26:27,656 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 16:26:27,657 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 16:26:28,628 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 16:34:42,395 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 16:34:42,566 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 16:34:42,567 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 16:34:42,567 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 16:34:42,567 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 16:34:42,567 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 16:34:42,567 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 16:34:42,567 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 16:34:43,494 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 16:37:43,741 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 16:37:43,926 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 16:37:43,926 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 16:37:43,927 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 16:37:44,800 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 16:50:31,638 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 16:50:31,851 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 16:50:31,852 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 16:50:32,790 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:05:08,256 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:05:08,430 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:05:08,430 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:05:08,430 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:05:08,430 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:05:08,430 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:05:08,431 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:06:11,877 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:06:12,055 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:06:12,055 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:06:12,055 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:06:12,055 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:06:12,056 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:07:52,139 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:07:52,312 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:07:52,313 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:10:26,029 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:10:26,202 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:10:27,126 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:14:33,991 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:14:34,162 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:14:34,162 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:14:34,162 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:14:34,162 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:14:34,162 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:14:34,162 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:14:34,163 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:14:35,010 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:17:47,725 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:17:47,945 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:17:47,945 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:17:47,945 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:17:47,946 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:17:48,822 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:19:56,051 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:19:56,235 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:19:57,205 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:20:30,673 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:20:30,878 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:20:31,754 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:21:57,311 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:21:57,479 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:21:58,353 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:23:03,463 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:23:03,641 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:23:03,642 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:23:03,642 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:23:03,642 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:23:03,642 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:23:03,642 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:23:03,642 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:23:04,530 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:24:03,085 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:24:03,253 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:24:04,115 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:52:07,597 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:52:07,781 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:52:08,873 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:58:05,405 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:58:05,586 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:58:06,632 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:58:50,153 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:58:50,338 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:58:51,283 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 17:59:09,014 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 17:59:09,207 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 17:59:09,208 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 17:59:09,208 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 17:59:09,208 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 17:59:09,208 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 17:59:09,208 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 17:59:10,085 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 18:40:23,228 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 18:40:23,722 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 18:40:23,722 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 18:40:23,722 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 18:40:23,722 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 18:40:23,722 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 18:40:23,722 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 18:40:23,722 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 18:40:23,723 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 18:40:24,987 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 18:46:23,444 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 18:46:23,971 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 18:46:23,971 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 18:46:23,971 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 18:46:23,971 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 18:46:23,972 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 18:46:23,972 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 18:46:23,972 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 18:46:23,972 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 18:46:23,972 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 18:46:23,972 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 18:46:23,977 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 18:46:25,587 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 18:55:34,124 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 18:55:34,727 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 18:55:34,728 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 18:55:36,291 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 19:04:00,305 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 19:04:02,124 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 19:04:04,471 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 19:57:38,905 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 19:57:39,091 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 19:57:39,092 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 19:57:39,949 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter
+2012-12-20 20:01:45,082 INFO  plugin.PluginRepository - Plugins: looking in: /home/zhousui/tools/apache-nutch-1.2/build/plugins
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - Registered Plugins:
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Video Information Parse Plug-in (parse-video)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - Registered Extension-Points:
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch Summarizer (org.apache.nutch.searcher.Summarizer)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch Analysis (org.apache.nutch.analysis.NutchAnalyzer)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch Field Filter (org.apache.nutch.indexer.field.FieldFilter)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	HTML Video Filter (org.apache.nutch.parse.VideoFilter)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch Query Filter (org.apache.nutch.searcher.QueryFilter)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch Search Results Response Writer (org.apache.nutch.searcher.response.ResponseWriter)
+2012-12-20 20:01:45,244 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2012-12-20 20:01:45,245 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2012-12-20 20:01:45,245 INFO  plugin.PluginRepository - 	Nutch Online Search Results Clustering Plugin (org.apache.nutch.clustering.OnlineClusterer)
+2012-12-20 20:01:45,245 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2012-12-20 20:01:45,245 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2012-12-20 20:01:45,245 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2012-12-20 20:01:45,245 INFO  plugin.PluginRepository - 	Ontology Model Loader (org.apache.nutch.ontology.Ontology)
+2012-12-20 20:01:46,075 INFO  video.HtmlVideoFilter - Adding org.apache.nutch.parse.html.video.youku.YoukuVideoInfoFilter

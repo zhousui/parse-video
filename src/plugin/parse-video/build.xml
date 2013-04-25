@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<project name="parse-video" default="jar-core">
+  <property name="generated.source.dir" value="${basedir}" />
+
+  <import file="../build-plugin.xml"/>
+  
+   <taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+   <classpath>
+     <fileset dir="jaxb-ri-2.2.6/lib" includes="*.jar" />
+   </classpath>
+   </taskdef>   
+ 
+ <taskdef name="mbgenerator" classname="org.mybatis.generator.ant.GeneratorAntTask"
+			classpath="lib/mybatis-generator-core-1.3.2.jar" />
+		
+   
+   <target name="init-plugin">
+     <echo message="generate xsd from xml..." />
+     <java classname="com.thaiopensource.relaxng.translate.Driver"
+        fork="true"
+        failonerror="yes"
+        classpath="trang-20091111/trang.jar">
+        <arg value="config/conf.xml"/>
+        <arg value="config/conf.xsd"/>
+     </java>  
+     <echo message="generate java from schema..." />
+     <xjc schema="config/conf.xsd" package="org.apache.nutch.parse.html.video.conf" destdir="src/java">
+         <produces dir="src/java" includes="**/*.java" />
+     </xjc> 
+     <!--java -jar lib/mybatis-generator-core-1.3.2.jar -configfile config/generatorConfig.xml -overwrite-->
+     <!--mbgenerator overwrite="true" configfile="config/generatorConfig.xml"
+			verbose="false">
+	<propertyset>
+           <propertyref name="generated.source.dir"/>
+         </propertyset>
+     </mbgenerator-->
+ </target>
+ 
+ <target name="jar" depends="compile">
+     <mkdir dir="${build.classes}/config"/>
+    <copy todir="${build.classes}/config"  verbose="true">
+       <fileset dir="config">
+       </fileset>
+     </copy>
+     <echo message="copy map xml........" />
+     <!--copy file="src/java/org/apache/nutch/parse/html/video/database/dao/*.xml" todir="${build.classes}/org/apache/nutch/parse/html/video/database/dao"/-->
+     <copy todir="${build.classes}/org/apache/nutch/parse/html/video/database/dao" verbose="true">
+	    <fileset dir="src/java/org/apache/nutch/parse/html/video/database/dao">
+               <include name="*.xml" />
+          </fileset>
+       </copy>
+    <jar
+      jarfile="${build.dir}/${name}.jar"
+      basedir="${build.classes}"
+    />
+  </target>
+ 
+ 
+  <!-- Build compilation dependencies -->
+  <target name="deps-jar">
+    <ant target="jar" inheritall="false" dir="../lib-xml"/>
+  </target>
+
+  <!-- Add compilation dependencies to classpath -->  
+  <path id="plugin.deps">
+    <fileset dir="${nutch.root}/build">
+      <include name="**/lib-nekohtml/*.jar" />
+    </fileset>
+    <fileset dir="lib">
+      <include name="**/*.jar" />
+    </fileset>
+  </path>
+  
+  <!--copy file="config/conf.xml" todir="${conf.dir}"/-->
+
+  <!-- Deploy Unit test dependencies -->
+  <target name="deps-test">
+    <ant target="deploy" inheritall="false" dir="../lib-xml"/>
+    <ant target="deploy" inheritall="false" dir="../nutch-extensionpoints"/>
+  </target>
+  
+  <!-- for junit test -->
+  <mkdir dir="${build.test}/data"/>
+  <copy file="data/test.html" todir="${build.test}/data"/>
+</project>

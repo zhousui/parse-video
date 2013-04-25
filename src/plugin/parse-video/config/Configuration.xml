@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<environments default="myexample">
+		<environment id="myexample">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/video" />
+				<property name="username" value="root" />
+				<property name="password" value="root" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<!--mapper resource="org/apache/nutch/parse/html/video/database/dao/VideoBaseinfoTblMapper.xml"/>
+		<mapper resource="org/apache/nutch/parse/html/video/database/dao/AreaCategoryTblMapper.xml"/>
+		<mapper resource="org/apache/nutch/parse/html/video/database/dao/ContentSupplierTblMapper.xml"/>
+		<mapper resource="org/apache/nutch/parse/html/video/database/dao/FirstlevelCategoryTblMapper.xml"/>
+		<mapper resource="org/apache/nutch/parse/html/video/database/dao/SecondlevelCategoryTblMapper.xml"/>
+		<mapper resource="org/apache/nutch/parse/html/video/database/dao/VideoCrawlinfoTblMapper.xml"/>
+		<mapper resource="org/apache/nutch/parse/html/video/database/dao/VideoScRefTblMapper.xml"/>
+		<mapper resource="org/apache/nutch/parse/html/video/database/dao/VideoSourceinfoTblMapper.xml"/-->
+	</mappers>
+</configuration>

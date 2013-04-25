@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<!-- 设置mysql驱动路径 -->
+<classPathEntry location="lib/mysql-connector-java-5.0.8-bin.jar" />
+<!-- 此处指定生成针对MyBatis3的DAO -->
+  <context id="context1"  targetRuntime="MyBatis3">
+  <!-- jdbc连接信息 -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"  
+    connectionURL="jdbc:mysql://localhost:3306/video" 
+    userId="root" password="root" />
+    <!-- 生成vo对象 -->
+    <javaModelGenerator targetPackage="org.apache.nutch.parse.html.video.database.model" targetProject="src/java" />
+    <!-- 生成用于查询的Example对象 -->
+    <sqlMapGenerator targetPackage="org.apache.nutch.parse.html.video.database.dao" targetProject="src/java" />
+    <!-- 生成DAO的类文件以及配置文件 -->
+    <javaClientGenerator targetPackage="org.apache.nutch.parse.html.video.database.dao" targetProject="src/java" type="XMLMAPPER" />
+    <!-- 想要生成的数据库表,自动化工具会根据该表的结构生成相应的vo对象 -->
+    <table schema="" tableName="content_supplier_tbl" />
+    <table schema="" tableName="area_category_tbl" />
+    <!--table schema="" tableName="area_category_ref_tbl" /-->
+    <!--table schema="" tableName="firstlevel_category_ref_tbl" /-->
+    <table schema="" tableName="firstlevel_category_tbl" />
+    <!--table schema="" tableName="secondlevel_category_ref_tbl" /-->
+    <table schema="" tableName="secondlevel_category_tbl" />
+    <table schema="" tableName="video_baseinfo_tbl" />
+    <table schema="" tableName="video_sc_ref_tbl" />
+    <table schema="" tableName="video_crawlinfo_tbl" />
+    <table schema="" tableName="video_sourceinfo_tbl" />
+    <table schema="" tableName="video_playinfo_tbl" />
+  </context>
+</generatorConfiguration>
